@@ -13,8 +13,8 @@ import utilities.DataFetcher;
 import java.lang.reflect.Method;
 
 public class Search {
-    //@Parameters({ "Search Term" })
-    //@Test(dataProvider = "JsonDataFetcher", dataProviderClass = DataFetcher.class)
+    @Parameters({ "Search Term" })
+    @Test(dataProvider = "JsonDataFetcher", dataProviderClass = DataFetcher.class)
     void searchValidationTest(String searchTerm){
         // SETUP
         //System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
